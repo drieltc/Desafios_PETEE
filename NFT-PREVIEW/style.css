@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root {
+    /*Primary*/
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: #00fff7;
+
+    /*Secondary*/
+    --darkblue_main_BG: #0d192b;
+    --darkblue_card_BG: #14253d;
+    --darkblue_line: #2f415b;
+  }
+
+  body{
+    display: flex;
+  }
+  
+  #central{
+    width: 400px;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

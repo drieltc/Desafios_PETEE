@@ -1,89 +1,75 @@
 @charset "UTF-8";
 
+/* CORES */
 :root {
     --lightgray: #d6e2f0;
     --grayishblue: #7b879d;
     --darkblue: #1f3251;
-  }
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* FONTE */
+@import url('<https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap>');
 
-  body{
+/* BODY */
+body{
     background-color: var(--lightgray);
     font-family: 'Outfit', sans-serif;
     text-align: center;
-
-    /*Escolhi colocar 98% pq mais que isso faz com que o navegador crie barras de rolagem (pelo menos no meu monito)
-    I chose to settle at 98% bc more than that causes de browser to create scrolling bars both vertical and horizontal*/
     width: 98vw;
     height: 98vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #central{
+/* CONTEÚDO CENTRAL */
+#central{
     background-color: white;
     align-content: center;
     padding: 15px;
-
-    /*A largura foi no olhômetro, já a altura foi conseguida através do devTools.
-    1. Coloquei o valor da altura em 'auto' 
-    2. abri o dev
-    3. vi qual altura estava mostrando lá (536.16px)
-    4. Diminui os valores de padding (15 em cima e 15 em baixo)
-    5. Cheguei no resultado*/
-
-    /*The width was jus guessing around the 375px value I got from 'style-guide.md'
-    Height was from this process:
-    1. set its value to 'auto'
-    2. open devtools
-    3. see the value its showing for the height (536.16px)
-    4. subtract the value of the paddings (15 up and 15 bottom)
-    5. thats the result*/
     width: 320px;
     height: 506.16px;
-
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
-
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;  
-  }
+    align-content: center;
+}
 
-  a.qrcode{
+/* QR CODE */
+a.qrcode{
     display: flex;
     justify-content: center;
-  }
+}
 
-  img{
+img{
     width: 320px;
     border-radius: 10px;
     align-self: center;
-  }
+}
 
-  img:hover{
+/* ANIMAÇÃO HOVER DA IMAGEM */
+img:hover{
     width: 330px;
     transition-duration: 0.2s;
-  }
+}
 
-  h1{
+/* TÍTULO */
+h1{
     font-weight: 700;
     font-size: x-large;
     padding: 0px 10px;
-  }
+}
 
-  p{
+/* PARÁGRAFO */
+p{
     font-weight: 400;
     color: var(--grayishblue);
     font-size: medium;
     padding: 0px 10px;
-  }
+}
 
-  /*Isso aqui já veio do código-base que o frontendmentor disponibiliza e eu decidi deixar
-  The code below came from the base-code frontendmentor gave for the challenge*/
-  .attribution {font-size: 11px; text-align: center; }
-  .attribution a {color: hsl(228, 45%, 44%); }
+/* ATRIBUIÇÃO */
+.attribution {font-size: 11px; text-align: center; }
+.attribution a {color: hsl(228, 45%, 44%); }

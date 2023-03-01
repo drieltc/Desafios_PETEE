@@ -33,7 +33,7 @@ body {
 #central {
   background-color: var(--darkblue_card_BG);
   width: var(--base_width);
-  height: fit-content;
+  height: 545px;
 
   padding: 25px;
 
@@ -48,6 +48,7 @@ body {
 
 img#equilibrium {
   width: 300px;
+  margin-bottom: 30px;
   border-radius: 10px;
   align-self: center;
 }

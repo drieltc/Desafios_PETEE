@@ -13,7 +13,7 @@
   --base_width: 300px;
 }
 
-@import url('<https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap>');
+@import url('<https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap>');
 
 body {
   background-color: var(--darkblue_main_BG);
@@ -48,31 +48,53 @@ body {
 
 img#equilibrium {
   width: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 10px;
   align-self: center;
+}
+
+#description {
+  font-weight: 100;
+  color: var(--softblue);
 }
 
 div#price_days {
   width: var(--base_width);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-#description {
-  font-weight: 300;
+div.price{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.time{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+p.timelimit {
   color: var(--softblue);
+  font-weight: 500;
+  margin-left: 7px;
 }
 
-.timelimit {
-  color: var(--softblue);
-  font-weight: 300;
-}
-
-.price {
+p.eth{
   color: var(--cyan);
   font-weight: 700;
+  margin-left: 7px;
+}
+
+hr{
+  width: 100%;
+  height: 1px;
+  border-color: #8bacda6b;
 }
 
 div#credits {

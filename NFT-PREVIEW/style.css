@@ -1,115 +1,148 @@
 @charset "UTF-8";
 
 :root {
-  /* Primary */
+  /* Colors */
   --softblue: #8bacda;
   --cyan: #00fff7;
+  --darkblue-main-bg: #0d192b;
+  --darkblue-card-bg: #14253d;
+  --darkblue-line: #2f415b;
+  
+  /* Sizes */
+  --base-width: 300px;
 
-  /* Secondary */
-  --darkblue_main_BG: #0d192b;
-  --darkblue_card_BG: #14253d;
-  --darkblue_line: #2f415b;
-
-  --base_width: 300px;
+  /* Reset */
+  margin: 0;
+  padding: 0;
 }
 
-@import url('<https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap>');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
 
+/* Body */
 body {
-  background-color: var(--darkblue_main_BG);
+  background-color: var(--darkblue-main-bg);
   color: white;
   font-family: 'Outfit', sans-serif;
-
-  /* I chose to settle at 98% bc more than that causes the browser to create scrolling bars both vertical and horizontal */
-  width: 98vw;
   height: 98vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
+/* Central */
 #central {
-  background-color: var(--darkblue_card_BG);
-  width: var(--base_width);
-  height: 545px;
-
-  padding: 25px;
-
+  align-items: flex-start;
+  background-color: var(--darkblue-card-bg);
   border-radius: 15px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
-
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.459);
   display: flex;
   flex-direction: column;
+  height: fit-content;
   justify-content: space-evenly;
-  align-items: flex-start;
+  padding: 25px;
+  width: var(--base-width);
 }
 
-img#equilibrium {
-  width: 300px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+/* Images */
+img#equilibrium,
+div.blend {
   align-self: center;
+  border-radius: 12px;
+  height: 300px;
+  margin-bottom: 15px;
+  width: 300px;
 }
 
+img#equilibrium:hover {
+  mix-blend-mode: color-dodge;
+}
+
+div.blend:hover {
+  background-color: rgba(0, 255, 191, 0.37);
+  transition-duration: 0.5s;
+}
+
+/* Headings */
+h2:hover {
+  color: var(--cyan);
+  transition-duration: 0.5s;
+}
+
+/* Description */
 #description {
-  font-weight: 100;
   color: var(--softblue);
+  font-weight: 100;
+  margin: 5px 0;
 }
 
+/* Price and Days */
 div#price_days {
-  width: var(--base_width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+  width: var(--base-width);
+}
+
+div.price,
+div.time {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-div.price{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
-
-div.time{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row;
-}
-
-p.timelimit {
+p.timelimit,
+p.eth {
   color: var(--softblue);
   font-weight: 500;
   margin-left: 7px;
 }
 
-p.eth{
+p.eth {
   color: var(--cyan);
   font-weight: 700;
-  margin-left: 7px;
 }
 
-hr{
-  width: 100%;
-  height: 1px;
+/* Horizontal Rule */
+hr {
   border-color: #8bacda6b;
+  height: 1px;
+  width: 100%;
 }
 
+/* Credits */
 div#credits {
-  width: var(--base_width);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  width: var(--base-width);
+}
+
+a#imgcreator,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cyan);
+  transition-duration: 0.5s;
 }
 
 img#creator {
-  width: 30px;
-  height: 30px;
   align-self: center;
+  border: white solid 1px;
+  border-radius: 100%;
+  height: 30px;
+  margin-right: 17px;
+  width: 30px;
 }
 
+/* Footer */
 footer {
   position: absolute;
   bottom: 0;

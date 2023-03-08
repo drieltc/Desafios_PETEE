@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root {
+  /* Colors */
+  --dark-cyan: #19a2ae;
+  --very-dark-desaturated-blue: #2d3248;
+  --darkgrayish-blue: #6a6f81;
+  --dark-gray: #969696;
+  
+  /* Sizes */
+  --base-width: 300px;
+
+  /* Reset */
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+span{
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Body */
+body {
+  background-color: var(--dark-cyan);
+  color: #777;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 98vh;
+  height: 96svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#central{
+    background-color: white;
+    align-content: center;
+    padding: 15px;
+    width: 320px;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+div#id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Horizontal Rule */
+hr {
+    border-color: #d7dadf6b;
+    height: 1px;
+    width: 100%;
+}
+
+div#numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.infos_ind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #70b8bd;
+  }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

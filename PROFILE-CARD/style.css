@@ -26,7 +26,11 @@ span{
 
 /* Body */
 body {
+  background-image: url(./images/bg-pattern-top.svg);
   background-color: var(--dark-cyan);
+  background-size: 900px;
+  background-position: -400px -400px;
+  background-repeat: no-repeat;
   color: #777;
   font-family: 'Kumbh Sans', sans-serif;
   height: 98vh;
@@ -42,7 +46,6 @@ body {
     align-content: center;
     padding: 15px;
     width: 320px;
-    height: fit-content;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
     display:flex;
@@ -51,11 +54,32 @@ body {
     align-content: center;
 }
 
+#upper{
+    height: 125px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: 300px;
+    margin: -15px -15px 0px -15px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 3px;
+    margin-top: -45px;
+    background-color: white;
+}
+
 div#id{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px 0px;
 }
 
 .stats {
@@ -75,6 +99,7 @@ div#numbers{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 15px 0px;
 }
 
 div.infos_ind{
@@ -89,6 +114,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #70b8bd;
+    color: rgb(235, 238, 238);
   }
 
 .attribution {

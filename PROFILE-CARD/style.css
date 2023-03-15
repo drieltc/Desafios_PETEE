@@ -26,11 +26,12 @@ span{
 
 /* Body */
 body {
-  background-image: url(./images/bg-pattern-top.svg);
   background-color: var(--dark-cyan);
-  background-size: 900px;
-  background-position: -400px -400px;
-  background-repeat: no-repeat;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-size: 65%, 65%;
+  background-position: -60% -60%, 160% 160%;
   color: #777;
   font-family: 'Kumbh Sans', sans-serif;
   height: 98vh;
@@ -115,7 +116,7 @@ footer {
     width: 100%;
     background-color: #70b8bd;
     color: rgb(235, 238, 238);
-  }
+}
 
 .attribution {
     font-size: 11px;
